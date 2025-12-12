@@ -1,0 +1,55 @@
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.div {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+h1{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+    color: #666;
+}
+
+.delete{
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: #e60000;
+}
+
+button#add{
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
