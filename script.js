@@ -19,23 +19,19 @@ addButton.addEventListener("click", function (event) {
     deleteBtn.textContent = "Sil";
     deleteBtn.className = "delete";
 
-     deleteBtn.addEventListener("click", function () {
+    deleteBtn.addEventListener("click", function () {
       box.remove();
-      console.log("salam");
-      
+      console.log("delete");
     });
 
-    box.appendChild(header);
-    box.appendChild(content);
-    box.appendChild(deleteBtn);
+    box.append(header, content, deleteBtn);
+    
     document.getElementById("container").appendChild(box);
     headerInput.value = "";
     contentInput.value = "";
   }
-
-  console.log("Salam");
+  console.log("add");
 });
-
 
 searchInput.addEventListener("keyup", function () {
   let searchValue = searchInput.value.toLowerCase();
@@ -45,10 +41,7 @@ searchInput.addEventListener("keyup", function () {
     let headerText = box.querySelector("h2").textContent.toLowerCase();
     let contentText = box.querySelector("p").textContent.toLowerCase();
 
-    if (
-      headerText.includes(searchValue) ||
-      contentText.includes(searchValue)
-    ) {
+    if (headerText.includes(searchValue) || contentText.includes(searchValue)) {
       box.style.display = "block";
     } else {
       box.style.display = "none";

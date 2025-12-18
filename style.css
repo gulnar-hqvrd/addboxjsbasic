@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+
 }
 
 body {
-  background: #f4f6f8;
+  background: teal;
   padding: 30px;
 }
 
@@ -45,6 +46,7 @@ form input {
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #add:hover {
